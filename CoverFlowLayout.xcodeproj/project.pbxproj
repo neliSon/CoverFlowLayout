@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		1BFB29711CA46946007DC0A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB29701CA46946007DC0A8 /* main.m */; };
 		1BFB29741CA46946007DC0A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB29731CA46946007DC0A8 /* AppDelegate.m */; };
-		1BFB29771CA46946007DC0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB29761CA46946007DC0A8 /* ViewController.m */; };
+		1BFB29771CA46946007DC0A8 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB29761CA46946007DC0A8 /* CustomViewController.m */; };
 		1BFB297A1CA46946007DC0A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB29781CA46946007DC0A8 /* Main.storyboard */; };
 		1BFB297C1CA46946007DC0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB297B1CA46946007DC0A8 /* Assets.xcassets */; };
 		1BFB297F1CA46946007DC0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB297D1CA46946007DC0A8 /* LaunchScreen.storyboard */; };
+		1BFB29901CA46D1B007DC0A8 /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB298F1CA46D1B007DC0A8 /* CoverFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		1BFB29701CA46946007DC0A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BFB29721CA46946007DC0A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BFB29731CA46946007DC0A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1BFB29751CA46946007DC0A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BFB29761CA46946007DC0A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BFB29751CA46946007DC0A8 /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		1BFB29761CA46946007DC0A8 /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		1BFB29791CA46946007DC0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BFB297B1CA46946007DC0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BFB297E1CA46946007DC0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFB29801CA46946007DC0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFB298E1CA46D1B007DC0A8 /* CoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayout.h; sourceTree = SOURCE_ROOT; };
+		1BFB298F1CA46D1B007DC0A8 /* CoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayout.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +61,12 @@
 		1BFB296E1CA46946007DC0A8 /* CoverFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				1BFB29721CA46946007DC0A8 /* AppDelegate.h */,
-				1BFB29731CA46946007DC0A8 /* AppDelegate.m */,
-				1BFB29751CA46946007DC0A8 /* ViewController.h */,
-				1BFB29761CA46946007DC0A8 /* ViewController.m */,
-				1BFB29781CA46946007DC0A8 /* Main.storyboard */,
+				1BFB298A1CA46AE2007DC0A8 /* UI */,
+				1BFB29891CA46AB6007DC0A8 /* Assets */,
+				1BFB29881CA46AB0007DC0A8 /* Controller */,
+				1BFB29871CA46AAA007DC0A8 /* View */,
+				1BFB29861CA46AA1007DC0A8 /* Model */,
 				1BFB297B1CA46946007DC0A8 /* Assets.xcassets */,
-				1BFB297D1CA46946007DC0A8 /* LaunchScreen.storyboard */,
 				1BFB29801CA46946007DC0A8 /* Info.plist */,
 				1BFB296F1CA46946007DC0A8 /* Supporting Files */,
 			);
@@ -77,6 +79,49 @@
 				1BFB29701CA46946007DC0A8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BFB29861CA46AA1007DC0A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB29721CA46946007DC0A8 /* AppDelegate.h */,
+				1BFB29731CA46946007DC0A8 /* AppDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1BFB29871CA46AAA007DC0A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB298E1CA46D1B007DC0A8 /* CoverFlowLayout.h */,
+				1BFB298F1CA46D1B007DC0A8 /* CoverFlowLayout.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1BFB29881CA46AB0007DC0A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB29751CA46946007DC0A8 /* CustomViewController.h */,
+				1BFB29761CA46946007DC0A8 /* CustomViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1BFB29891CA46AB6007DC0A8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		1BFB298A1CA46AE2007DC0A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB29781CA46946007DC0A8 /* Main.storyboard */,
+				1BFB297D1CA46946007DC0A8 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFB29771CA46946007DC0A8 /* ViewController.m in Sources */,
+				1BFB29771CA46946007DC0A8 /* CustomViewController.m in Sources */,
+				1BFB29901CA46D1B007DC0A8 /* CoverFlowLayout.m in Sources */,
 				1BFB29741CA46946007DC0A8 /* AppDelegate.m in Sources */,
 				1BFB29711CA46946007DC0A8 /* main.m in Sources */,
 			);

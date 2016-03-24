@@ -6,13 +6,13 @@
 //  Copyright © 2016 Nelson Chow. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CustomViewController.h"
 
-@interface ViewController ()
+@interface CustomViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CustomViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
