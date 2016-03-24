@@ -62,12 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				1BFB298A1CA46AE2007DC0A8 /* UI */,
-				1BFB29891CA46AB6007DC0A8 /* Assets */,
 				1BFB29881CA46AB0007DC0A8 /* Controller */,
-				1BFB29871CA46AAA007DC0A8 /* View */,
 				1BFB29861CA46AA1007DC0A8 /* Model */,
-				1BFB297B1CA46946007DC0A8 /* Assets.xcassets */,
-				1BFB29801CA46946007DC0A8 /* Info.plist */,
+				1BFB29871CA46AAA007DC0A8 /* View */,
+				1BFB29891CA46AB6007DC0A8 /* Assets */,
 				1BFB296F1CA46946007DC0A8 /* Supporting Files */,
 			);
 			path = CoverFlowLayout;
@@ -86,6 +84,8 @@
 			children = (
 				1BFB29721CA46946007DC0A8 /* AppDelegate.h */,
 				1BFB29731CA46946007DC0A8 /* AppDelegate.m */,
+				1BFB298E1CA46D1B007DC0A8 /* CoverFlowLayout.h */,
+				1BFB298F1CA46D1B007DC0A8 /* CoverFlowLayout.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -93,8 +93,6 @@
 		1BFB29871CA46AAA007DC0A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1BFB298E1CA46D1B007DC0A8 /* CoverFlowLayout.h */,
-				1BFB298F1CA46D1B007DC0A8 /* CoverFlowLayout.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -111,6 +109,8 @@
 		1BFB29891CA46AB6007DC0A8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1BFB297B1CA46946007DC0A8 /* Assets.xcassets */,
+				1BFB29801CA46946007DC0A8 /* Info.plist */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
